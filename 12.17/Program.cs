@@ -24,7 +24,7 @@ namespace _12._17
             int szamlalo = 0;
             for (int i = 0; i < tomb.Length; i++)
             {
-                if (tomb[1] % 2 == 0)
+                if (tomb[i] % 2 == 0)
                 {
                     szamlalo++;
                 }
@@ -56,12 +56,23 @@ namespace _12._17
                 }
                 else
                 {
-                    paratlanok[i] = tomb[1];
+                    paratlanok[i] = tomb[i];
                 }
             }
             return paratlanok;
         }
 
+        static void F05(int[] tomb)
+        {
+            Console.WriteLine($"Ennyi db pozitív szám van a tömbben: {F02(tomb)}");
+            Console.WriteLine($"A tömb elemeinek átlaga: {F03(tomb)}");
+            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+            foreach (var item in F04(tomb))
+            {
+                Console.Write($"{item}, ");
+            }
+            Console.WriteLine();
+        }
 
         static void Main(string[] args)
         {
