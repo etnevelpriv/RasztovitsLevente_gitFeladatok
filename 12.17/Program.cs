@@ -15,6 +15,7 @@ namespace _12._17
             for (int i = 0; i < szamok.Length; i++)
             {
                 szamok[i] = random.Next(1, 51);
+
             }
         }
         static void Main(string[] args)
