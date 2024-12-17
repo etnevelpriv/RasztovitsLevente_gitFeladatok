@@ -18,6 +18,19 @@ namespace _12._17
 
             }
         }
+
+        static int F02(int[] tomb)
+        {
+            int szamlalo = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[1] % 2 == 0)
+                {
+                    szamlalo++;
+                }
+            }
+            return szamlalo;
+        }
         static void Main(string[] args)
         {
             int[] szamok = new int[10];
