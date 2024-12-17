@@ -44,7 +44,25 @@ namespace _12._17
            
         }
 
-        
+        static int[] F04(int[] tomb)
+        {
+            int[] paratlanok = new int[10];
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i] % 2 == 0)
+                {
+                    tomb[i]++;
+                    paratlanok[i] = tomb[i];
+                }
+                else
+                {
+                    paratlanok[i] = tomb[1];
+                }
+            }
+            return paratlanok;
+        }
+
+
         static void Main(string[] args)
         {
             int[] szamok = new int[10];
