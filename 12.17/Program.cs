@@ -80,6 +80,7 @@ namespace _12._17
             F01(szamok);
             F05(szamok);
 
+
         }
     }
 }
