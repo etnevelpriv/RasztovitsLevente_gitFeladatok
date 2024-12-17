@@ -31,6 +31,20 @@ namespace _12._17
             }
             return szamlalo;
         }
+
+        static double F03(int[] tomb)
+        {
+            double atlag =0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                atlag += tomb[i];
+            }
+            atlag /= tomb.Length;
+            return atlag;
+           
+        }
+
+        
         static void Main(string[] args)
         {
             int[] szamok = new int[10];
